@@ -127,20 +127,44 @@ body{
     margin-top: 10px;
 }
 
-.box5 input{
-    width: 50%;
+.box5 {
+    font-size: 30px;
     margin-top: 20px;
-    margin-left: 100px;
-    border: none;
-    background-color:grey;
-    font-size: 20px;
- } 
+    position: relative;
+    left:100px;
+    background-color:plum;
+    padding: 5px 10px 5px 10px; 
+    border-radius: 5px 10px 5px 10px; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box5:hover{
+    box-shadow: 0 0 7px;
+    transition: 0.5s;
+}
+ 
  
  p{
     text-align: center;
     padding-top: 10px;
     font-size: 15px;
  }
+
+    
+    
+
+    
+
+
+
+
+    
+        
+        
+        
+        
+        
+          
 
 
 
