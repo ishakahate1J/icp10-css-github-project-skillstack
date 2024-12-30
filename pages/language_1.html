@@ -150,7 +150,23 @@
             }
         }
         </pre>
-        
+        <h1 id="file-handling">Java File Handling</h1>
+        <p>Java provides classes for reading and writing files, such as:</p>
+        <ul>
+            <li><strong>FileReader:</strong> Reads data from a file.</li>
+            <li><strong>FileWriter:</strong> Writes data to a file.</li>
+            <li><strong>BufferedReader:</strong> Reads text from an input stream efficiently.</li>
+        </ul>
+        <h3>Example:</h3>
+        <pre class="example">
+import java.io.File;  
+public class FileExample {  
+    public static void main(String[] args) {  
+        File file = new File("example.txt");  
+        System.out.println("File exists: " + file.exists());  
+    }  
+}
+        </pre>
     </div>
 </body>
 </html>
