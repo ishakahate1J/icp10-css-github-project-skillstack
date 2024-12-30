@@ -40,7 +40,43 @@
             <h3>Video on Data Types</h3>
            <iframe width="560" height="315" src="https://www.youtube.com/embed/D3DqJrlckbs?si=772h9aNHoiuv49EK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe> <br />
            <br />
-          
+           <h1>Java Operators</h1>
+           <p id="operators">
+           <p><pre style="font-family:Arial, Helvetica, sans-serif" class="operator">
+            Java divides the operators into the following groups:
+
+            1)Arithmetic operators
+
+            2)Assignment operators
+
+            3)Comparison operators
+
+            4)Logical operators
+
+            5)Bitwise operators</pre></p>
+            <h3>Example</h3>
+            <pre class="example" style="height: 300px; width:700px;">
+                
+                public class OperatorExample {
+                public static void main(String[] args) {
+                    int a = 10, b = 5;
+                    // Arithmetic
+                    System.out.println("a + b: " + (a + b)); // 15
+                    // Assignment
+                    int c = a;
+                    c += b;
+                    System.out.println("c after += b: " + c); // 15
+                    // Comparison
+                    System.out.println("a > b: " + (a > b)); // true
+                    // Logical
+                    System.out.println("(a > b) && (b > 0): " + ((a > b) && (b > 0))); // true
+                    // Bitwise
+                    System.out.println("a & b: " + (a & b)); // 0
+                }
+            }
+            </pre>
+        </p>
+
     </div>
 </body>
 </html>
