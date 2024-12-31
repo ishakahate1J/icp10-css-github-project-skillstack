@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Page</title>
-
+   
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
         @import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sevillana&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Faster+One&display=swap");
 
@@ -14,6 +16,7 @@
   padding: 0;
   box-sizing: border-box;
   color: black;
+ 
 }
 
 .top-nav-bar {
@@ -45,6 +48,7 @@
 
 .nav-links a {
   color: #fdfdfd;
+  text-decoration: dashed;
 }
 
 .logo {
@@ -76,20 +80,182 @@
 .search-bar:hover {
   box-shadow: 0px 0px 10px 5px #e7e3e3;
 }
+
+
+
+.nav-container{
+  height: 65px;
+}
+    
+
+/* College Card CSS */
+
+  .college-card{
+    margin: 60px;
+    height: 260px;
+    width: 360px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px 5px rgb(1, 18, 16);
+    font-family: cursive;
+  }
+
+  .college-logo{
+    height:120px;
+   width: 100%;
+   border-top-left-radius: 30px; 
+   border-top-right-radius: 30px;
+  }
+
+  .location-icon{
+    height: 60px;
+  }
+
+  .card1{
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .college-card-row1{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .college-card-row2{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .college-card-row3{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .college-card-row4{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .heading{
+     position: relative;
+     top: 25px;
+     font-family: "Nosifer", serif;
+     font-weight: 400;
+     font-style: normal;
+     color: rgb(42, 118, 148);
+     left: 78px;
+     margin-bottom: 50px;
+  }
     </style>
+
+<style>
+  .web-bottom-page{
+      height: 400px;
+      width: 100%;
+      background-color: rgb(1, 1, 21);
+      color:white;
+      display: flex;
+  }
+  .web-logo{
+      margin-top: 32px;
+      margin-left: 80px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .web-bottom-page p{
+      color: white;
+      width:230px;
+      font-size: 22px;
+      position: relative;
+      top: 20px;
+  }
+  
+
+  .footer-links{
+      position: relative;
+      left: 200px;
+      padding-top: 55px;
+      
+  }
+
+  .footer-links li a{
+      color: white;
+      font-size: 26px;
+      line-height:2;
+      text-decoration: dashed;
+  }
+
+  
+
+  .footear-heading{
+      color: white;
+      font-size: 32px;
+      margin-bottom: 18px;
+  }
+
+  .Rights{
+      color: white;
+      padding: 32px;
+      font-size: 22px;
+      position:relative;
+      right: 25px;
+  }
+
+  .pupular-course-link{
+      position: relative;
+      left: 120px;
+  }
+  .pupular-course-link li a{
+      color: white;
+      line-height: 1.5;
+      font-size: 23px;
+      text-decoration: dashed;
+  }
+
+  .pupular-course-link h2{
+      margin-top: 55px;
+  }
+
+  .footer-contact{
+      position: relative;
+      left: 200px;
+      top: 55px;
+      display: flex; 
+      flex-direction: column; 
+      justify-content: start; 
+  }
+
+  .footer-contact a{
+      font-size: 32px;
+      text-decoration: dashed;
+  }
+
+  .social-icons{
+      height: 80px;
+      margin: 20px;
+  }
+ 
+</style>
 
 </head>
 <body>
 
+  <div class="nav-container">
     <nav class="top-nav-bar">
         <ul class="nav-links">
+          <a href="/pages/home.html">
        <img src="/icons/web-icon2.png" class="logo" alt="" 
-       ">
+       "></a>
        <a href="">Courses</a></li>
        <li> <a href="">Exercises</a></li>
        <li> <a href="">Colleges</a></li>
        <li> <a href="">Apply</a></li>
-       <input type="text" placeholder="Search Tutorials Here" class="search-bar" >
+       <input type="text" placeholder="Search College" class="search-bar" >
        <li> <a href="">
         <button class="nav-btn">
             Log In
@@ -104,9 +270,211 @@
        <li><a href=""><img src="/icons/profile.png"  class="logo"></a></li>
     </ul>
     </nav>
+  </div>
 
-<div>
-   <h1>Explore Colleges</h1>
+  <div class="main" style="background-color: #ddebec;">
+
+  <h1 class="heading">Explore The Best Colleges In Maharashtra For Bachelor of Technology !</h1>
+
+  <div class="college-card-row1">
+    <div class="college-card">
+      <img src="/images/dy-patil.jpg" alt="" class="college-logo">
+      <div class="card1"> 
+        <a href="https://dypatiluniversitypune.edu.in/">
+        <img src="/icons/location.png" alt="location" class="location-icon"></a>
+        <h3>Dr.D.Y. Patil Institude Of Technology, Pune</h3> </div>
+    </div>
+
+  <div class="college-card">
+    <img src="/images/dy-patil.jpg" alt="" class="college-logo">
+    <div class="card1"> 
+      <a href="https://dypatiluniversitypune.edu.in/">
+      <img src="/icons/location.png" alt="location" class="location-icon"></a>
+      <h3>Dr.D.Y. Patil Institude Of Technology, Pune</h3> </div>
+  </div>
+
+  <div class="college-card">
+    <img src="/images/dy-patil.jpg" alt="" class="college-logo">
+    <div class="card1"> 
+      <a href="https://dypatiluniversitypune.edu.in/">
+      <img src="/icons/location.png" alt="location" class="location-icon"></a>
+      <h3>Dr.D.Y. Patil Institude Of Technology, Pune</h3> </div>
+  </div>
+
+  <div class="college-card">
+    <img src="/images/dy-patil.jpg" alt="" class="college-logo">
+    <div class="card1"> 
+      <a href="https://dypatiluniversitypune.edu.in/">
+      <img src="/icons/location.png" alt="location" class="location-icon"></a>
+      <h3>Dr.D.Y. Patil Institude Of Technology, Pune</h3> </div>
+  </div>
 </div>
+
+
+<div class="college-card-row2">
+  <div class="college-card">
+    <img src="/images/dy-patil.jpg" alt="" class="college-logo">
+    <div class="card1"> 
+      <a href="https://dypatiluniversitypune.edu.in/">
+      <img src="/icons/location.png" alt="location" class="location-icon"></a>
+      <h3>Dr.D.Y. Patil Institude Of Technology, Pune</h3> </div>
+  </div>
+
+<div class="college-card">
+  <img src="/images/dy-patil.jpg" alt="" class="college-logo">
+  <div class="card1"> 
+    <a href="https://dypatiluniversitypune.edu.in/">
+    <img src="/icons/location.png" alt="location" class="location-icon"></a>
+    <h3>Dr.D.Y. Patil Institude Of Technology, Pune</h3> </div>
+</div>
+
+<div class="college-card">
+  <img src="/images/dy-patil.jpg" alt="" class="college-logo">
+  <div class="card1"> 
+    <a href="https://dypatiluniversitypune.edu.in/">
+    <img src="/icons/location.png" alt="location" class="location-icon"></a>
+    <h3>Dr.D.Y. Patil Institude Of Technology, Pune</h3> </div>
+</div>
+
+<div class="college-card">
+  <img src="/images/dy-patil.jpg" alt="" class="college-logo">
+  <div class="card1"> 
+    <a href="https://dypatiluniversitypune.edu.in/">
+    <img src="/icons/location.png" alt="location" class="location-icon"></a>
+    <h3>Dr.D.Y. Patil Institude Of Technology, Pune</h3> </div>
+  </div>
+</div>
+
+
+<div class="college-card-row3">
+  <div class="college-card">
+    <img src="/images/dy-patil.jpg" alt="" class="college-logo">
+    <div class="card1"> 
+      <a href="https://dypatiluniversitypune.edu.in/">
+      <img src="/icons/location.png" alt="location" class="location-icon"></a>
+      <h3>Dr.D.Y. Patil Institude Of Technology, Pune</h3> </div>
+  </div>
+
+<div class="college-card">
+  <img src="/images/dy-patil.jpg" alt="" class="college-logo">
+  <div class="card1"> 
+    <a href="https://dypatiluniversitypune.edu.in/">
+    <img src="/icons/location.png" alt="location" class="location-icon"></a>
+    <h3>Dr.D.Y. Patil Institude Of Technology, Pune</h3> </div>
+</div>
+
+<div class="college-card">
+  <img src="/images/dy-patil.jpg" alt="" class="college-logo">
+  <div class="card1"> 
+    <a href="https://dypatiluniversitypune.edu.in/">
+    <img src="/icons/location.png" alt="location" class="location-icon"></a>
+    <h3>Dr.D.Y. Patil Institude Of Technology, Pune</h3> </div>
+</div>
+
+<div class="college-card">
+  <img src="/images/dy-patil.jpg" alt="" class="college-logo">
+  <div class="card1"> 
+    <a href="https://dypatiluniversitypune.edu.in/">
+    <img src="/icons/location.png" alt="location" class="location-icon"></a>
+    <h3>Dr.D.Y. Patil Institude Of Technology, Pune</h3> </div>
+  </div>
+</div>
+
+
+<div class="college-card-row4">
+  <div class="college-card">
+    <img src="/images/dy-patil.jpg" alt="" class="college-logo">
+    <div class="card1"> 
+      <a href="https://dypatiluniversitypune.edu.in/">
+      <img src="/icons/location.png" alt="location" class="location-icon"></a>
+      <h3>Dr.D.Y. Patil Institude Of Technology, Pune</h3> </div>
+  </div>
+
+<div class="college-card">
+  <img src="/images/dy-patil.jpg" alt="" class="college-logo">
+  <div class="card1"> 
+    <a href="https://dypatiluniversitypune.edu.in/">
+    <img src="/icons/location.png" alt="location" class="location-icon"></a>
+    <h3>Dr.D.Y. Patil Institude Of Technology, Pune</h3> </div>
+</div>
+
+<div class="college-card">
+  <img src="/images/dy-patil.jpg" alt="" class="college-logo">
+  <div class="card1"> 
+    <a href="https://dypatiluniversitypune.edu.in/">
+    <img src="/icons/location.png" alt="location" class="location-icon"></a>
+    <h3>Dr.D.Y. Patil Institude Of Technology, Pune</h3> </div>
+</div>
+
+<div class="college-card">
+  <img src="/images/dy-patil.jpg" alt="" class="college-logo">
+  <div class="card1"> 
+    <a href="https://dypatiluniversitypune.edu.in/">
+    <img src="/icons/location.png" alt="location" class="location-icon"></a>
+    <h3>Dr.D.Y. Patil Institude Of Technology, Pune</h3> </div>
+  </div>
+</div>
+</div>
+
+<div class="web-bottom-page">
+  <div class="web-logo">
+      <a href="/pages/home.html">
+  <img src="/icons/web-icon2.png" alt="" class="80px" width="80px" ></a> <h1 style="color: wheat;">SkillStack</h1>
+  <p>
+      SkilStack is an innovative educational platform designed to help you master programming languages through detailed and easy-to-understand documentation.
+  </p>
+  </div>
+  
+  <div class="footer-links">
+      <ul>
+          <h4 class="footear-heading">Quick Links</h4>
+          <li><a href="">Courses</a></li>
+          <li><a href="">Apply</a></li>
+          <li><a href="">Explore Colleges</a></li>
+          <li><a href="">Exercises</a></li>
+          <h3 class="Rights">Copyright© 2024 SkillStack. All Rights Reserved</h3>
+      </ul>
+  </div>
+  
+  
+  <div class="pupular-course-link">
+      <h2 class="footear-heading">Popular Languages</h2>
+      <ul>
+      <li><a href="">HTML</a></li>
+      <li><a href="">CSS</a></li>
+      <li><a href="">JavaScript</a></li>
+      <li><a href="">Java</a></li>
+      <li><a href="">Python</a></li>
+      </ul>
+  </div>
+  
+  
+  <div class="footer-contact">
+      <a href="/pages/contact.html" style="color: white; margin-left: 60px auto;">Contact Us</a>
+      <div class="footer-icons">
+         <a href="https://www.facebook.com/profile.php?id=61571504183031" target="_blank">
+          <img src="/icons/instagram.png" alt="instagram" class="social-icons">
+         </a> 
+  
+         <a href="https://www.facebook.com/profile.php?id=61571504183031" target="_blank">
+          <img src="/icons/facebook.png" alt="facebook" class="social-icons">
+         </a> 
+  
+         <a href="https://x.com/SkillStacK033" target="_blank">
+          <img src="/icons/twitter.png" alt="twitter" class="social-icons">
+         </a> 
+  
+         <a href="https://www.youtube.com/@SkillStack033" target="_blank">
+          <img src="/icons/youtube.png" alt="youtube" class="social-icons">
+         </a> 
+  
+         <a href="" target="_blank" >
+          <img src="/icons/linkedin.png" alt="" class="social-icons">
+         </a> 
+  
+      </div>
+      </div>
+  </div>
+
 </body>
 </html>
