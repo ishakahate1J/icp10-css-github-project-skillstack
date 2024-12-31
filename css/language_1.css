@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+  }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    margin-top: 80px;
+}
+.sidebar {
+    width: 220px; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100vh; 
+    background-color: #343a40;
+    color: #fff;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
+    
+}
+.sidebar a {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #cfcfcf;
+   
+}
+.sidebar a:hover {
+    background-color: #04AA6D;
+    color: #fff;
+}
+.para {
+    margin: 0;
+    padding: 20px;
+    margin-left: 220px; 
+    color: #000000;
+   
+}
+
+
+.para p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.example{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    height: 108px;
+    width: 500px;
+    border-color:20px aqua;
+    margin-left: 100px;
+    padding-left: 10px;
+    font-size: 13px;
+    
+    
+    
+}
+.youtube{
+    margin-left: 100px;
+}
+h3{
+    margin-top:50px;
+    margin-left:90px;
+}
+li{
+    margin-top:10px;
+}
+.titles{
+    color: #04AA6D;
+}
+.center{
+    color:#04AA6D;
+    margin-left: 40%;
+    height: 40px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+  }
+  
+  .top-nav-bar {
+    background-color: #020610;
+    padding: 8px;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    font-family: "Poppins", serif;
+    font-size: 18px;
+  }
+  
+  .search-bar {
+    padding: 12px 30px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    font-family: "Poppins", serif;
+  }
+  
+  .nav-links a {
+    color: #fdfdfd;
+  }
+  
+  .logo {
+    height: 55px;
+  }
+  
+  .nav-btn {
+    padding: 15px 30px;
+    color: #fdfdfd;
+    border-radius: 20px;
+    background-color: #005173;
+    color: #fdfdfd;
+    border: none;
+    font-size: 18px;
+  }
+  
+  .nav-btn:hover {
+    background-color: rgb(11, 13, 31);
+    box-shadow: 0px 0px 10px 5px #e7e3e3;
+  }
+  
+  .search-bar:hover {
+    box-shadow: 0px 0px 10px 5px #e7e3e3;
+  }
+  

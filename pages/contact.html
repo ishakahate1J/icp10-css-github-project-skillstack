@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>contact page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+ 
+
+  <style>* 
+  {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: black;
+        }
+
+    
+        .top-nav-bar{
+            background-color: #192A51;
+            padding: 8px;
+            height: 75px;
+            width: 100%;
+        }
+
+        .nav-links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            list-style: none;
+            font-family:"Poppins", serif;;
+            font-size: 18px;
+            
+        }
+
+        .search-bar{
+           padding:15px 30px ;
+            border-radius: 20px;
+            border: none;
+            font-size: 18px;
+            font-family:"Poppins", serif;;
+        }
+
+        .nav-links a{
+            color: #FDFDFD;
+        }
+
+        .logo{
+            height: 55px; 
+        }
+
+    /*    .nav-links a:hover{
+            background-color: rgb(12, 12, 15);
+            border-radius: 20px;
+            padding: 15px;
+            padding-bottom: 5px;
+        } */
+
+        .nav-btn{
+            padding:15px 30px ;
+            color: #fdfdfd;
+            border-radius: 20px;
+            background-color: #005173;
+            color: #fdfdfd;
+            border: none;
+            font-size: 18px;
+        }
+
+        .nav-btn:hover{
+            background-color: rgb(102, 170, 170);
+            box-shadow: 0px 0px 10px 5px #e7e3e3;
+        }
+
+        .container1{
+            background-color: #7fa2f5;
+            background-image: url(/images/background_in_space.webp);
+            height: 700px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family:"Poppins", serif;
+            font-weight: 900;
+            text-align: center;
+        }
+       
+        .index-poster{
+            height: 420px;
+            border-radius: 30px;
+            border: none;
+            padding-left: 10px;
+            position: relative;
+            left: 25px;
+            z-index: 2;
+            
+        }
+
+       .heading-block{
+        position: relative;
+        bottom: 62px;
+       }
+
+        .main-heading{
+            font-size: 67px;
+            color: #fdfdfd;
+        }
+
+        .sub-heading{
+            font-size: 35px;
+            color: #fdfdfd;
+        }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color:lightskyblue
+}
+
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #e74c3c;
+}
+
+
+.contact-section {
+    background-color: #fff;
+    padding: 40px 0;
+    margin: 40px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-section p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #3c78e7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+
+.contact-info {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+</style>
+ <body>
+    <nav class="top-nav-bar">
+        <ul class="nav-links">
+       <img src="icons/web-icon2.png" class="logo" alt="" >
+        <a href="">Courses</a></li>
+       <li> <a href="">Exercises</a></li>
+       <li> <a href="">Colleges</a></li>
+       <li> <a href="">Apply</a></li>
+       <input type="text" placeholder="Search Tutorials Here" class="search-bar" >
+       <li> <a href="">
+        <button class="nav-btn">
+            Log In
+        </button>
+       </a></li>
+
+       <li> <a href="">
+        <button class="nav-btn">
+            Sign Up
+        </button>
+       </a></li>
+       <li><a href=""><img src="icons/profile.png"  class="logo"></a></li>
+    </ul>
+    </nav>
+
+   <section class="contact-section">
+    <div class="container">
+     
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need support, feel free to reach out to us.</p>
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name"  size="40" placeholder="Enter The Name">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"  size="40" placeholder="Enter Email Address">
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone: </label>
+                    <input type="phone" id="phone" name="phone" size="40" placeholder="Enter Phone Number">
+
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required size="40" placeholder="Enter Message"></textarea>
+                   
+                 
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h3>contact information</h3>
+            <p>123 Online Education Ave, Suite 100, Education City, EC 12345</p>
+            <p>Email: <a href="mailto:support@onlineeducation.com">onlineeducation2024@gmail.com</a></p>
+            <p>Phone: 2929384756</p>
+        </div>
+    </div>
+</section>
+
+      </body>
+        </html>
+        
+
+    
+        
