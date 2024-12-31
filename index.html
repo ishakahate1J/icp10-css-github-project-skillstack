@@ -1,14 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
         <title>java Quiz</title>
+        <link rel="stylesheet" href="./css/quiz_java.css"> 
        
 </head>
 <body>
-    <div>
-        <h1>Quiz Application</h1>
+    <div class="quiz-container">
+        <h1>Java Quiz Application</h1>
+        <div>
+           
+            <div class="question">
+                1. What is the size of the `int` data type in Java?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" id="q1a" name="q1" class="correct">
+                    <label for="q1a">A. 4 bytes</label>
+                </li>
+                <li>
+                    <input type="radio" id="q1b" name="q1" class="incorrect">
+                    <label for="q1b">B. 8 bytes</label>
+                </li>
+                <li>
+                    <input type="radio" id="q1c" name="q1" class="incorrect">
+                    <label for="q1c">C. 2 bytes</label>
+                </li>
+                <li>
+                    <input type="radio" id="q1d" name="q1" class="incorrect">
+                    <label for="q1d">D. 1 byte</label>
+                </li>
+            </ul>
+           
+            <div class="question">
+                2. Which of the following is not a Java keyword?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" id="q2a" name="q2" class="incorrect">
+                    <label for="q2a">A. static</label>
+                </li>
+                <li>
+                    <input type="radio" id="q2b" name="q2" class="incorrect">
+                    <label for="q2b">B. try</label>
+                </li>
+                <li>
+                    <input type="radio" id="q2c" name="q2" class="incorrect">
+                    <label for="q2c">C. new</label>
+                </li>
+                <li>
+                    <input type="radio" id="q2d" name="q2" class="correct">
+                    <label for="q2d">D. main</label>
+                </li>
+            </ul>
+           
+            <div class="question">
+                3. What is the default value of a `boolean` in Java?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" id="q3a" name="q3" class="incorrect">
+                    <label for="q3a">A. true</label>
+                </li>
+                <li>
+                    <input type="radio" id="q3b" name="q3" class="correct">
+                    <label for="q3b">B. false</label>
+                </li>
+                <li>
+                    <input type="radio" id="q3c" name="q3" class="incorrect">
+                    <label for="q3c">C. 0</label>
+                </li>
+                <li>
+                    <input type="radio" id="q3d" name="q3" class="incorrect">
+                    <label for="q3d">D. null</label>
+                </li>
+            </ul>
+           
+            <div class="question">
+                4. Which of the following is used to handle exceptions in Java?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" id="q4a" name="q4" class="incorrect">
+                    <label for="q4a">A. catch</label>
+                </li>
+                <li>
+                    <input type="radio" id="q4b" name="q4" class="incorrect">
+                    <label for="q4b">B. try</label>
+                </li>
+                <li>
+                    <input type="radio" id="q4c" name="q4" class="incorrect">
+                    <label for="q4c">C. throw</label>
+                </li>
+                <li>
+                    <input type="radio" id="q4d" name="q4" class="correct">
+                    <label for="q4d">D. All of the above</label>
+                </li>
+            </ul>
+           
+            <div class="question">
+                5. What does JVM stand for?
+            </div>
+            <ul class="options">
+                <li>
+                    <input type="radio" id="q5a" name="q5" class="correct">
+                    <label for="q5a">A. Java Virtual Machine</label>
+                </li>
+                <li>
+                    <input type="radio" id="q5b" name="q5" class="incorrect">
+                    <label for="q5b">B. Java Variable Memory</label>
+                </li>
+                <li>
+                    <input type="radio" id="q5c" name="q5" class="incorrect">
+                    <label for="q5c">C. Java Visual Machine</label>
+                </li>
+                <li>
+                    <input type="radio" id="q5d" name="q5" class="incorrect">
+                    <label for="q5d">D. Java Verified Machine</label>
+                </li>
+            </ul>
+            
+        </div>
+                <!-- Question 6 -->
+                <div class="question">
+                    6. Which of the following is not a feature of Java?
+                </div>
+                <ul class="options">
+                    <li>
+                        <input type="radio" id="q6a" name="q6" class="incorrect">
+                        <label for="q6a">A. Platform-independent</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q6b" name="q6" class="incorrect">
+                        <label for="q6b">B. Object-oriented</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q6c" name="q6" class="correct">
+                        <label for="q6c">C. Supports pointers</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q6d" name="q6" class="incorrect">
+                        <label for="q6d">D. Robust</label>
+                    </li>
+                </ul>
+                <!-- Question 7 -->
+                <div class="question">
+                    7. What is the use of the `final` keyword in Java?
+                </div>
+                <ul class="options">
+                    <li>
+                        <input type="radio" id="q7a" name="q7" class="incorrect">
+                        <label for="q7a">A. Define a constant</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q7b" name="q7" class="incorrect">
+                        <label for="q7b">B. Prevent inheritance</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q7c" name="q7" class="incorrect">
+                        <label for="q7c">C. Prevent method overriding</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q7d" name="q7" class="correct">
+                        <label for="q7d">D. All of the above</label>
+                    </li>
+                </ul>
+                <!-- Question 8 -->
+                <div class="question">
+                    8. Which method is used to find the length of a string in Java?
+                </div>
+                <ul class="options">
+                    <li>
+                        <input type="radio" id="q8a" name="q8" class="incorrect">
+                        <label for="q8a">A. size()</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q8b" name="q8" class="correct">
+                        <label for="q8b">B. length()</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q8c" name="q8" class="incorrect">
+                        <label for="q8c">C. getSize()</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q8d" name="q8" class="incorrect">
+                        <label for="q8d">D. getLength()</label>
+                    </li>
+                </ul>
+                <!-- Question 9 -->
+                <div class="question">
+                    9. Which package contains the core classes in Java?
+                </div>
+                <ul class="options">
+                    <li>
+                        <input type="radio" id="q9a" name="q9" class="correct">
+                        <label for="q9a">A. java.lang</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q9b" name="q9" class="incorrect">
+                        <label for="q9b">B. java.util</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q9c" name="q9" class="incorrect">
+                        <label for="q9c">C. java.io</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q9d" name="q9" class="incorrect">
+                        <label for="q9d">D. java.core</label>
+                    </li>
+                </ul>
+                <!-- Question 10 -->
+                <div class="question">
+                    10. What is the correct syntax to create an object in Java?
+                </div>
+                <ul class="options">
+                    <li>
+                        <input type="radio" id="q10a" name="q10" class="correct">
+                        <label for="q10a">A. ClassName obj = new ClassName();</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q10b" name="q10" class="incorrect">
+                        <label for="q10b">B. ClassName obj = new ClassName;</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q10c" name="q10" class="incorrect">
+                        <label for="q10c">C. ClassName obj();</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="q10d" name="q10" class="incorrect">
+                        <label for="q10d">D. new ClassName obj = new ClassName();</label>
+                    </li>
+                </ul>
+        
     </div>
-    
-    
 </body>
+
 </html>
