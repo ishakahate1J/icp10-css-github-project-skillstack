@@ -4,8 +4,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAVA Tutorial</title>
+    <link rel="stylesheet" href="./../css/language_1.css"> 
+   
 </head>
 <body>
     
+    <nav class="top-nav-bar">
+        <ul class="nav-links">
+       <img src="/icons/web-icon2.png" class="logo" alt="" 
+       ">
+       <a href="">Courses</a></li>
+       <li> <a href="">Exercises</a></li>
+       <li> <a href="">Colleges</a></li>
+       <li> <a href="">Apply</a></li>
+       <input type="text" placeholder="Search Tutorials Here" class="search-bar" >
+       <li> <a href="login.html" target="_blank">
+        <button class="nav-btn">
+            Log In
+        </button>
+       </a></li>
+
+       <li> <a href="sign.html" target="_blank">
+        <button class="nav-btn">
+            Sign Up
+        </button>
+       </a></li>
+       <li><a href=""><img src="/icons/profile.png"  class="logo"></a></li>
+    </ul>
+    </nav>
+    <div class="sidebar">
+       
+        <a href="#introduction">Introduction</a>
+        <a href="#data-types">Data Types</a>
+        <a href="#operators">Java Operators</a>
+        <a href="#looping">Java Looping</a>
+        <a href="#methods">Java Methods</a>
+        <a href="#classes">Java Classes</a>
+        <a href="#file-handling">File Handling</a>
+        <a href="#quize">Quize</a>
+    </div>
+    <div class="para">
+        <h1 class="center">Java Tutorial</h1>
+        <h1 id="introduction">What is Java?</h1>
+        <p>Java is a programming language and a platform. Java is a high-level, robust, object-oriented, and secure programming language. <br/>Java was developed by Sun Microsystems in 1995, and James Gosling is known as its father. Initially called Oak, the name was later changed to Java</p>
+        
+        <h1 id="data-types">Java Data Types</h1>
+        <p>Java data types are categorized into:</p>
+        <ul>
+            <li><strong>Integer Types:</strong> Stores whole numbers (e.g., byte, short, int, long).</li> 
+            <li><strong>Floating Point Types:</strong> Represents numbers with decimals (e.g., float, double).</li>
+           
+        </ul>
+        <h3>Syntax:</h3>
+        <p><pre class="example">
+
+            int myNum = 5;               // Integer (whole number)
+            float myFloatNum = 5.99f;    // Floating point number
+            boolean myBool = true;       // Boolean
+            char myLetter = 'D';         // Character
+            String myText = "Hello";     // String</pre></p>
+            <h3>Video on Data Types</h3>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/D3DqJrlckbs?si=772h9aNHoiuv49EK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe> <br />
+           <br /> <br />
+           <h1>Java Operators</h1>
+           <p id="operators">
+           <p><pre style="font-family:Arial, Helvetica, sans-serif" class="operator">
+            Java divides the operators into the following groups:
+
+            Arithmetic operators
+
+            Assignment operators
+
+           Comparison operators
+
+            Logical operators
+
+           Bitwise operators</pre></p>
+            <h3>Example</h3>
+            <pre class="example" style="height: 300px; width:700px;">
+                
+                public class OperatorExample {
+                public static void main(String[] args) {
+                    int a = 10, b = 5;
+                    // Arithmetic
+                    System.out.println("a + b: " + (a + b)); // 15
+                    // Assignment
+                    int c = a;
+                    c += b;
+                    System.out.println("c after += b: " + c); // 15
+                    // Comparison
+                    System.out.println("a > b: " + (a > b)); // true
+                    // Logical
+                    System.out.println("(a > b) && (b > 0): " + ((a > b) && (b > 0))); // true
+                    // Bitwise
+                    System.out.println("a & b: " + (a & b)); // 0
+                }
+            }
+            </pre>
+        </p>   <br /> <br />
+        <h1 id="looping">Java Looping</h1>
+        <p>Java provides the following loops to perform repetitive tasks:</p>
+        <ul>
+            <li><strong>For Loop:</strong> Repeats a block of code a specific number of times.
+            <pre class="example">public class ForExample {  
+                public static void main(String[] args) {  
+                    for(int i=1;i<=10;i++){  
+                        System.out.println(i);  
+                    }  
+                }  
+                }  </pre></li>
+            <li><strong>While Loop:</strong> Repeats a block of code while a condition is true.
+            <pre class="example">
+                
+                int i = 0;
+                while (i < 5) {
+                  System.out.println(i);
+                  i++;
+                }</pre></li>
+            <li><strong>Do-While Loop:</strong> Executes a block of code at least once, then repeats it while a condition is true.
+            <pre class="example">
+                int i = 0;
+                do {
+                  System.out.println(i);
+                  i++;
+                }
+                while (i < 5);</pre></li>
+        </ul> <br /> <br />
+        <h1 id="methods">Java Methods</h1>
+        <p>A Java method is a block of code that performs a specific task:</p>
+        <ul>
+            <li><strong>Syntax:</strong> <code>returnType methodName(parameters) { // code }</code></li>
+            <li><strong>Types:</strong> Predefined methods (e.g., <code>System.out.println()</code>) and user-defined methods.
+                <h3>Example</h3>
+            <pre class="example" style="height: 140px;">
+                public class Main {
+                static void myMethod() {
+                  System.out.println("I just got executed!");
+                }
+                public static void main(String[] args) {
+                  myMethod();
+                }
+              }
+              // Outputs "I just got executed!"
+              </pre></li>
+        </ul>
+        <h3>Method in Java Video</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/t6e5AyYWLFw?si=3Eqg0pAZJcEvdTRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="youtube"></iframe><br /> <br />
+        <h1 id="classes">Java Classes</h1>
+        <p>A class is a blueprint for creating objects in Java:</p>
+        <ul>
+            <li><strong>Definition:</strong> <code>class ClassName { // fields and methods }</code></li>
+            <li>Classes encapsulate data and methods together.</li>
+            <li>Objects are instances of classes.</li>
+        </ul>
+        <h3>Example</h3>
+        <pre class="example" style="height: 250px; width: 600px;">
+            class ClassName {
+            // Fields (attributes)
+            String name;
+            int age;
+        
+            // Constructor
+            ClassName(String name, int age) {
+                this.name = name;
+                this.age = age;
+            }
+        
+            // Method
+            void displayInfo() {
+                System.out.println("Name: " + name + ", Age: " + age);
+            }
+        }
+        </pre>  <br /> <br />
+        <h1 id="file-handling">Java File Handling</h1>
+        <p>Java provides classes for reading and writing files, such as:</p>
+        <ul>
+            <li><strong>FileReader:</strong> Reads data from a file.</li>
+            <li><strong>FileWriter:</strong> Writes data to a file.</li>
+            <li><strong>BufferedReader:</strong> Reads text from an input stream efficiently.</li>
+        </ul>
+        <h3>Example:</h3>
+        <pre class="example">
+import java.io.File;  
+public class FileExample {  
+    public static void main(String[] args) {  
+        File file = new File("example.txt");  
+        System.out.println("File exists: " + file.exists());  
+    }  
+}
+        </pre>
+    </div> <hr />
+    <h3 class="bt">Quize</h3> <br />
+    <div class="btns">
+       
+       <a href="./../pages/quiz_java.html" target="_blank"> <button class="btn" id="quize">Start Quize</button></a>
+    </div> <br />
+    <hr />
+    <br />
 </body>
 </html>

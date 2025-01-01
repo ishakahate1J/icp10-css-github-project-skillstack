@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate of Completion</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 101vh;
+            margin: 0;
+        }
+        .certificate {
+            background: #ffffff; 
+            width: 800px;
+            height: 600px;
+            border: 15px solid #0056A0;
+            border-top: 40px solid #002147; 
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            border-radius: 10px;
+        }
+        .logo img {
+            width: 200px; 
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 29px;
+            margin: 20px 0;
+            color: #003366;
+        }
+        h2 {
+            font-size: 25px;
+            margin: 10px 0;
+            color: #0056A0;
+        }
+        .name {
+            font-weight: bold;
+            font-size: 30px;
+            margin: 10px 0;
+            color: #D50000;
+        }
+        .course {
+            font-size: 22px;
+            font-weight: bold;
+            color: #0056A0;
+        }
+        .appreciation {
+            font-size: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #008000;
+        }
+        .signature {
+            width: 200px;
+            position: absolute;
+            right: 90px;
+            bottom: 20px;
+        }
+        .stamp {
+            width: 150px;
+            position: absolute;
+            left: 55px;
+            bottom: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate">
+        <div class="logo">
+            <img src="./../images/l.png" alt="Logo">
+        </div>
+        <!--Body Started-->
+        <h1>Certificate of Completion</h1>
+        <h2>This certifies that</h2>
+        <h3 class="name">Akshay Marathe</h3>
+        <div class="appreciation">Your dedication, perseverance, and commitment to excellence have set a standard of achievement. We commend your efforts and enthusiasm in mastering the complexities of the Java programming language. This accomplishment reflects not just skill, but a passion for continuous learning and growth.</div>
+        <h4>Has completed the course:</h4>
+        <h2 class="course">Course Name</h2><br><br>
+        <div class="footer">
+            <img src="./../images/stamp.png" alt="Stamp" class="stamp">
+            <img src="./../images/sign.png" alt="Signature" class="signature">
+        </div>
+    </div>
+</body>
+</html>
