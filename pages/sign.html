@@ -4,82 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up page</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="css/styles.css">
-=======
+    <link rel="stylesheet" href="./../css/styles.css">
+
     <style>
     .sign-container{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-top: 30px;
     }
     @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
      h1{
         text-align: center;
-        color:black;
+        color:white;
         font-size: 30px;
+        margin-bottom: 20px;
     }
     
     body{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        background-color:lightskyblue;
+        background-image:url(./../images/rm373batch13-081.jpg);
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        position: relative;
     }
     
     .sign-container{
-        background-color:bisque;
-        border-radius: 20px;
+        background:transparent;
+        border-radius:30px;
         padding: 20px;
         width: 400px;
         box-shadow: 0px 4px 8px rgba(from color r g b);
         border: solid;
         font-size: 20px;
+        color: bisque;
+        box-sizing: border-box;
 
     }
 
     .sign-container:hover{
         box-shadow: 0 0 7px;
         transition: 0.5s;
-        color: red;
+        color:black;
 
     }
     
     .box1 input{
-        border: 2px solid brown ;
+        border:solid black;
         border-radius:20px;
         padding: 5px 10px 5px 10px;
-        color:black ;
+        color: wheat;
         font-size:15px;
+        margin-top: 10px;
+        background: transparent;
+        width:80%;
+        margin-bottom: 10px;
+    }
+
+    .box1 input::placeholder{
+        color: gainsboro;
     }
     
     .box2 input{
         font-size: 15px;
         border-radius: 20px;
         padding: 5px 10px 5px 10px;
-        color: black;
-        border: 2px solid brown;
+        color: wheat;
+        border: solid black;
         margin-top: 10px;
+        background: transparent;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .box2 input::placeholder{
+        color: gainsboro;
     }
     
     .box3 input{
         font-size: 15px;
         border-radius: 20px;
         padding: 5px 10px 5px 10px;
-        color: black;
-        border:2px solid brown;
+        color:wheat;
+        border:solid black;
         margin-top: 10px;
+        background: transparent;
+        width: 80%;
+        margin-bottom: 10px;
     }
+
+    .box3 input::placeholder{
+        color: gainsboro;
+    }
+
     .box4 input{
         font-size: 15px;
         border-radius: 20px;
         padding: 5px 10px 5px 10px;
-        color: black;
-        border:2px solid brown;
+        color:wheat;
+        border:solid black;
         margin-top: 10px;
+        background: transparent;
+        width: 80%;
+        margin-bottom: 10px;
+
+    }
+
+    .box4 input::placeholder{
+        color: gainsboro;
     }
 
     
@@ -90,14 +127,21 @@
         margin-top: 20px;
         position: relative;
         left:100px;
-        background-color:plum;
+        background-color:beige;
         padding: 5px 10px 5px 10px; 
         border-radius: 5px 10px 5px 10px; 
+        margin-bottom: 10px;
+        color: black;
     }
     
     .box5:hover{
-        box-shadow: 0 0 7px;
+        box-shadow: 0 0 5px 5px rgb (32,21,33);
         transition: 0.5s;
+        background-color: white;
+        color: purple;
+        border: 2px solid rgb(52,8,62);
+        border-radius: 30px;
+
     }
      
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
@@ -105,63 +149,120 @@
         text-align: center;
         padding-top: 10px;
         font-size: 15px;
+        color: white;
+        font-size: large;
+        margin-bottom: 10px;
      }
 
      .Link{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 18px;
+        color: beige;
      }
-     </style>
->>>>>>> fab5a4d430b353b4896974a7c5845bd7b35b5a33
 
+     .log{
+        color:white;
+     }
+
+     .or{
+        text-align: center;
+        color:white;
+        font-size:  20px;
+     }
+
+     .but{
+        font-size: 25px;
+        background-color: cornflowerblue;
+        text-align:center;
+        border: 2px solid white;
+        padding: 10px 10px 10px 10px;
+        margin-top: 20px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        justify-content: center;
+        width: 100%;
+        border-radius: 5px 5px 5px 5px;
+
+    
+    }
+
+    .but:hover{
+        transition: 0.5s;
+        box-shadow: 0px 10px 10px 5px black;
+        color: black;
+        background-color: #ddddbb;
+    }
+
+
+
+     </style>
 </head>
 <body>
+    <nav class="top-nav-bar">
+        <ul class="nav-links">
+       <img src="/icons/web-icon2.png" class="logo" alt="" 
+       ">
+       <a href="">Courses</a></li>
+       <li> <a href="">Exercises</a></li>
+       <li> <a href="">Colleges</a></li>
+       <li> <a href="">Apply</a></li>
+       <input type="text" placeholder="Search Tutorials Here" class="search-bar" >
+       <li> <a href="">
+        <button class="nav-btn">
+            Log In
+        </button>
+       </a></li>
+
+       <li> <a href="">
+        <button class="nav-btn">
+            Sign Up
+        </button>
+       </a></li>
+       <li><a href=""><img src="/icons/profile.png"  class="logo"></a></li>
+    </ul>
+    </nav>
 
     <div class="sign-container">
-
-<<<<<<< HEAD
-        <h2>Sign Up</h2>
-=======
         <h1>Sign Up Here</h1>
->>>>>>> fab5a4d430b353b4896974a7c5845bd7b35b5a33
 
         <div class="box1">
-        <input type="text" placeholder="First Name:">
-        </div>
+            <input type="text" placeholder="First Name:">
+            </div>
+    
+            <div class="box2">
+                <input type="text" placeholder="Last Name:">
+            </div>
+    
+            <div class="box3">
+                <input type="text" placeholder="Email Id:">
+            </div>
+    
+            <div class="box4">
+                <input type="password" placeholder="Password:">
+            </div>
+    
+            <button class="box5">Sign Up</button>
+    
+    
+       
+        <p>By clicking Sign Up button ,you agree to our<br>
+            <a href="#">Terms and Condition</a>
+            and
+            <a href="#">Policy And Privacy</a>
 
-        <div class="box2">
-            <input type="text" placeholder="Last Name:">
-        </div>
-
-        <div class="box3">
-            <input type="text" placeholder="Email Id:">
-        </div>
-
-        <div class="box4">
-            <input type="text" placeholder="Password:">
-        </div>
-
-        <button class="box5">Sign Up</button>
-<<<<<<< HEAD
-
+            <p class="Link">Already have an account?
+                <a href="login.html">
+                    <b class="log">Login here</b>
+                </a>
+                </p>
+                <div class="or">or</div>
+                <div>
+                    <button class="but">Sign Up With Google</button>
+                </div>
+                
+            </body>
+            </html>
     
 
-    
 
 
-=======
-        
->>>>>>> fab5a4d430b353b4896974a7c5845bd7b35b5a33
-    <p>By clicking Sign Up button ,you agree to our<br>
-    <a href="#">Terms and Condition</a> and
-    <a href="#">Policy and Privacy</a>
-</p>
 
-<p class="Link">Already have an account?
-    <a href="login.html">
-        <b>Login here</b>
-    </a>
-    </p>
-    
-</body>
-</html>

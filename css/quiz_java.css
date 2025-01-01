@@ -2,16 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #004d99;
 }
-body {
-    font-family: 'Arial', cambria ;
-    background:#00264d;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
-}
+
 .quiz-container {
+
     background: #004d99;
     color: white;
     border-radius: 15px;
@@ -20,6 +15,7 @@ body {
     max-width: 1200px;
     width: 100%;
     box-shadow:  2px 2px 5px 10px #0073e6;
+    margin: 100px 150px ;
     
 }
 h1 {
