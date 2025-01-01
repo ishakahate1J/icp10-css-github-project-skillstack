@@ -1,12 +1,215 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Programming Courses</title>
     </head>
+    <style> 
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fb;
+            color: #333;
+        }
+
+        header {
+            background-color:rgb(152, 138, 164);
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.3em;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(152, 144, 160);
+            color: white;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        nav.top-nav-bar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav.top-nav-bar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav.top-nav-bar ul li {
+            padding: 14px 20px;
+        }
+
+        nav.top-nav-bar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav.top-nav-bar ul li a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        
+        .courses {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .courses h2 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: rgb(12, 10, 13);
+        }
+
+        
+        .course {
+            background-color: white;
+            margin: 20px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 30%;
+            box-sizing: border-box;
+            text-align: left;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .course:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .course h3 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: rgb(5, 1, 8);
+        }
+
+        .course p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #766b6b;
+        }
+
+        
+        .btn {
+            background-color: blueviolet;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: rgb(115, 115, 20);
+        }
+           .login-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .login-section a {
+            text-decoration: none;
+            background-color: rgb(97, 97, 171);
+            color: white;
+            padding: 12px 20px;
+            font-size: 1.2em;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-section a:hover {
+            background-color: #d31d1d;
+        }
+    </style>
+    </head>
 <body>
-<h1></h1>
+    <nav class="top-nav-bar">
+        <ul class="nav-links">
+            <li><a href="">Courses</a></li>
+            <li><a href="">Exercises</a></li>
+            <li><a href="">Colleges</a></li>
+            <li><a href="">Apply</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Welcome to Programming Courses</h1>
+        <p>Start your journey towards becoming a coding expert!</p>
+    </header>
 
+    
+    <section class="courses">
+        <h2>Our Courses</h2>
+        
+        <div class="course">
+            <h3>Introduction to HTML</h3>
+            <p>Learn the basics of HTML and start creating your own websites.</p>
+            <button class="btn" onclick="window.location.href='html_course.html'">More Information</button>
+        </div>
 
+        
+        <div class="course">
+            <h3>CSS for Beginners</h3>
+            <p>Learn how to style websites and create beautiful designs using CSS.</p>
+            <button class="btn" onclick="window.location.href='css_course.html'">More Information</button>
+        </div>
+       
+        <div class="course">
+            <h3>JavaScript Essentials</h3>
+            <p>Understand the fundamentals of JavaScript and make your website interactive.</p>
+            <button class="btn" onclick="window.location.href='js_course.html'">More Information</button>
+        </div>
 
+       
+        <div class="course">
+            <h3>Python for Data Science</h3>
+            <p>Learn Python and dive into data science, machine learning, and more!</p>
+            <button class="btn" onclick="window.location.href='python_course.html'">More Information</button>
+        </div>
+
+       
+        <div class="course">
+            <h3>Web Development with React</h3>
+            <p>Build modern and dynamic websites with the popular React framework.</p>
+            <button class="btn" onclick="window.location.href='react_course.html'">More Information</button>
+        </div>
+    </section>
+   
+     <section class="login-section">
+        <h2>Already a Member?</h2>
+        <p>Click below to login and access your courses.</p>
+        <a href="login.html">Login</a>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Programming Courses. All rights reserved.</p>
+    </footer>
+    
 </body>
 </html>
