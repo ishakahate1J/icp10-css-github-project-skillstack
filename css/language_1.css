@@ -93,6 +93,7 @@ li{
     width: 100%;
     position: fixed;
     top: 0;
+    
   }
   
   .nav-links {
@@ -103,6 +104,7 @@ li{
     list-style: none;
     font-family: "Poppins", serif;
     font-size: 18px;
+    
   }
   
   .search-bar {
@@ -111,10 +113,12 @@ li{
     border: none;
     font-size: 18px;
     font-family: "Poppins", serif;
+    
   }
   
   .nav-links a {
     color: #fdfdfd;
+    text-decoration: none;
   }
   
   .logo {
@@ -129,6 +133,7 @@ li{
     color: #fdfdfd;
     border: none;
     font-size: 18px;
+    
   }
   
   .nav-btn:hover {
@@ -139,4 +144,24 @@ li{
   .search-bar:hover {
     box-shadow: 0px 0px 10px 5px #e7e3e3;
   }
-  
+  .btn{
+     color: #ffffff;
+     height: 50px;
+     width: 100px;
+     font-size: large;
+     background-color: rgb(67, 220, 24);
+  }
+  .btns{
+    margin-left: 50%;
+  }
+  .bt{
+ margin-left: 51%;
+ font-size: x-large;
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+  .btn:hover{
+    background-color: #3b980c;
+    height: 52px;
+    width: 102px;
+  }
