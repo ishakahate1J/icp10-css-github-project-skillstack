@@ -34,8 +34,6 @@ body{
 
 }
 
-
-
 h2{
     text-align: center;
     font-size: 30px;
@@ -166,20 +164,19 @@ box-shadow: 0px 0px 5px 5px rgb(32, 21, 33);
 <body>
     <nav class="top-nav-bar">
         <ul class="nav-links">
-       <img src="/icons/web-icon2.png" class="logo" alt="" 
-       ">
-       <a href="">Courses</a></li>
-       <li> <a href="">Exercises</a></li>
-       <li> <a href="">Colleges</a></li>
+       <img src="/icons/web-icon2.png" class="logo" alt="">
+       <a href="/pages/Course.html">Courses</a></li>
+       <li> <a href="/pages/quiz.html">Exercises</a></li>
+       <li> <a href="/pages/colleges.html">Colleges</a></li>
        <li> <a href="">Apply</a></li>
        <input type="text" placeholder="Search Tutorials Here" class="search-bar" >
-       <li> <a href="">
+       <li> <a href="/pages/login.html">
         <button class="nav-btn">
             Log In
         </button>
        </a></li>
 
-       <li> <a href="">
+       <li> <a href="/pages/sign.html">
         <button class="nav-btn">
             Sign Up
         </button>
@@ -197,23 +194,16 @@ box-shadow: 0px 0px 5px 5px rgb(32, 21, 33);
             <label for="input">Username:</label>
             <input type="text" placeholder="Enter Username:" required>
             <i class="fa-solid fa-user";background-color:wh></i>
-
         
-
-
-
-            </div><br>
+        </div><br>
 
         <div class="box">
 
             <label for="input">Passward:</label>
-            <input type="text" placeholder="Enter passward:"required>
+            <input type="password" placeholder="Enter passward:"required>
             <i class="fa-solid fa-lock"></i>
         
-
-        
-
-            </div><br>
+        </div><br>
 
         <div class="remember-forgot">
             <label for="input">Remember Me:</label>
@@ -221,10 +211,11 @@ box-shadow: 0px 0px 5px 5px rgb(32, 21, 33);
             <a href="a">Forgot Password</a>
         </div>
 
-    
-        <button class="btt1">Login</button>
-        
-        <div class="sign">
+
+        <a href="home.html">
+            <button type="button" class="btt1">Login</button></a>
+            
+            <div class="sign">
             <p class="bb">Don't have an account?
                 <a href="sign.html">
                     <b class="lit">Sign up</b>
@@ -232,6 +223,3 @@ box-shadow: 0px 0px 5px 5px rgb(32, 21, 33);
             </p>
         </div>
      </form>
-
-</body>
-</html>
