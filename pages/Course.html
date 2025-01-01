@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Programming Courses</title>
-    </head>
+    <title>Programming Courses</title>
     <style> 
         body {
             font-family: 'Arial', sans-serif;
@@ -15,7 +14,7 @@
         }
 
         header {
-            background-color:rgb(152, 138, 164);
+            background-color: rgb(152, 138, 164);
             color: white;
             text-align: center;
             padding: 50px 0;
@@ -36,10 +35,9 @@
             background-color: rgb(152, 144, 160);
             color: white;
             padding: 15px 0;
-            position: relative;
-            bottom: 0;
             width: 100%;
         }
+
         nav.top-nav-bar {
             background-color: #333;
             overflow: hidden;
@@ -68,7 +66,6 @@
             color: black;
         }
 
-        
         .courses {
             padding: 40px 20px;
             text-align: center;
@@ -80,7 +77,6 @@
             color: rgb(12, 10, 13);
         }
 
-        
         .course {
             background-color: white;
             margin: 20px;
@@ -110,7 +106,6 @@
             color: #766b6b;
         }
 
-        
         .btn {
             background-color: blueviolet;
             color: white;
@@ -125,7 +120,8 @@
         .btn:hover {
             background-color: rgb(115, 115, 20);
         }
-           .login-section {
+
+        .login-section {
             text-align: center;
             padding: 20px;
         }
@@ -145,71 +141,81 @@
         .login-section a:hover {
             background-color: #d31d1d;
         }
-    </style>
-    </head>
-<body>
-    <nav class="top-nav-bar">
-        <ul class="nav-links">
-            <li><a href="">Courses</a></li>
-            <li><a href="">Exercises</a></li>
-            <li><a href="">Colleges</a></li>
-            <li><a href="">Apply</a></li>
-        </ul>
-    </nav>
-    
-    <header>
-        <h1>Welcome to Programming Courses</h1>
-        <p>Start your journey towards becoming a coding expert!</p>
-    </header>
 
-    
+        /* Media Query for Responsiveness */
+        @media (max-width: 768px) {
+            .top-nav-bar ul {
+                flex-direction: column;
+            }
+
+            .course {
+                width: 80%;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>  
+<nav class="top-nav-bar">
+      <ul class="nav-links">
+        <li> <a href="/pages/course.html">Courses</a></li>
+        <li> <a href="/pages/quiz.html">Quizes</a></li>
+        <li> <a href="/pages/colleges.html">Colleges</a></li>
+        <li> <a href="">Exercises</a></li>
+        <li><a href="">Apply</a></li>
+      </ul>
+</nav>
+
+<header>
+    <h1>Welcome to Programming Courses</h1>
+    <p>Start your journey towards becoming a coding expert!</p>
+</header>
+
+<main>
     <section class="courses">
         <h2>Our Courses</h2>
-        
         <div class="course">
             <h3>Introduction to HTML</h3>
             <p>Learn the basics of HTML and start creating your own websites.</p>
-            <button class="btn" onclick="window.location.href='html_course.html'">More Information</button>
+            <button class="btn" href='html_course.html'>More Information</button>
         </div>
 
-        
         <div class="course">
             <h3>CSS for Beginners</h3>
             <p>Learn how to style websites and create beautiful designs using CSS.</p>
-            <button class="btn" onclick="window.location.href='css_course.html'">More Information</button>
+            <button class="btn" href='css_course.html'>More Information</button>
         </div>
-       
+
         <div class="course">
-            <h3>JavaScript Essentials</h3>
+            <h3>Introduction to JavaScript</h3>
             <p>Understand the fundamentals of JavaScript and make your website interactive.</p>
-            <button class="btn" onclick="window.location.href='js_course.html'">More Information</button>
+            <button class="btn" href='js_course.html'>More Information</button>
         </div>
 
-       
         <div class="course">
-            <h3>Python for Data Science</h3>
+            <h3>Python for Beginners</h3>
             <p>Learn Python and dive into data science, machine learning, and more!</p>
-            <button class="btn" onclick="window.location.href='python_course.html'">More Information</button>
+            <button class="btn" href='python_course.html'>More Information</button>
         </div>
 
-       
         <div class="course">
             <h3>Web Development with React</h3>
             <p>Build modern and dynamic websites with the popular React framework.</p>
-            <button class="btn" onclick="window.location.href='react_course.html'">More Information</button>
+            <button class="btn" href='react_course.html'>More Information</button>
         </div>
     </section>
-   
-     <section class="login-section">
+
+    <section class="login-section">
         <h2>Already a Member?</h2>
         <p>Click below to login and access your courses.</p>
         <a href="login.html">Login</a>
     </section>
+</main>
 
-    
-    <footer>
-        <p>&copy; 2024 Programming Courses. All rights reserved.</p>
-    </footer>
-    
+<footer>
+    <p>&copy; 2024 Programming Courses. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
+
