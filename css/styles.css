@@ -1,3 +1,84 @@
+
+
+/* Nav-Bar CSS */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+
+  }
+  
+  .top-nav-bar {
+    background-color: #020610;
+    padding: 8px;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    font-family: "Poppins", serif;
+    font-size: 18px;
+  }
+  
+  .search-bar {
+    padding: 12px 30px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    font-family: "Poppins", serif;
+  }
+  
+  .nav-links a {
+    color: #fdfdfd;
+  }
+  
+  .logo {
+    height: 55px;
+  }
+  
+  /*    .nav-links a:hover{
+              background-color: rgb(12, 12, 15);
+              border-radius: 20px;
+              padding: 15px;
+              padding-bottom: 5px;
+          } */
+  
+  .nav-btn {
+    padding: 15px 30px;
+    color: #fdfdfd;
+    border-radius: 20px;
+    background-color: #005173;
+    color: #fdfdfd;
+    border: none;
+    font-size: 18px;
+  }
+  
+  .nav-btn:hover {
+    background-color: rgb(11, 13, 31);
+    box-shadow: 0px 0px 10px 5px #e7e3e3;
+  }
+  
+  .search-bar:hover {
+    box-shadow: 0px 0px 10px 5px #e7e3e3;
+  }
+  
+  
+  
+  .nav-container{
+    height: 65px;
+  }
+
+
 .Login-container{
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 0;

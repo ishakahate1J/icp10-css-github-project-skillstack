@@ -1,120 +1,31 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index page</title>
-  <link rel="stylesheet" href="./../css/home.css"> 
+    <title>Index page</title>
+  <link rel="stylesheet" href="/css/home.css"> 
    
-  <style>
-    .web-bottom-page{
-        height: 400px;
-        width: 100%;
-        background-color: rgb(1, 1, 21);
-        color:white;
-        display: flex;
-    }
-    .web-logo{
-        margin-top: 32px;
-        margin-left: 80px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .web-bottom-page p{
-        color: white;
-        width:230px;
-        font-size: 22px;
-        position: relative;
-        top: 20px;
-    }
-    
-
-    .footer-links{
-        position: relative;
-        left: 200px;
-        padding-top: 55px;
-        
-    }
-
-    .footer-links li a{
-        color: white;
-        font-size: 26px;
-        line-height:2;
-        text-decoration: dashed;
-    }
-
-    
-
-    .footear-heading{
-        color: white;
-        font-size: 32px;
-        margin-bottom: 18px;
-    }
-
-    .Rights{
-        color: white;
-        padding: 32px;
-        font-size: 22px;
-        position:relative;
-        right: 25px;
-    }
-
-    .pupular-course-link{
-        position: relative;
-        left: 120px;
-    }
-    .pupular-course-link li a{
-        color: white;
-        line-height: 1.5;
-        font-size: 23px;
-        text-decoration: dashed;
-    }
-
-    .pupular-course-link h2{
-        margin-top: 55px;
-    }
-
-    .footer-contact{
-        position: relative;
-        left: 200px;
-        top: 55px;
-        display: flex; 
-        flex-direction: column; 
-        justify-content: start; 
-    }
-
-    .footer-contact a{
-        font-size: 32px;
-        text-decoration: dashed;
-    }
-
-    .social-icons{
-        height: 80px;
-        margin: 20px;
-    }
-   
-  </style>
+  
 </head>
 <body>
-
+    <div class="nav-container">
     <nav class="top-nav-bar">
-        <ul class="nav-links">
+        <ul class="nav-links"><a href="index.html">
        <img src="/icons/web-icon2.png" class="logo" alt="" 
-       ">
-       <a href="">Courses</a></li>
-       <li> <a href="">Exercises</a></li>
-       <li> <a href="">Colleges</a></li>
-       <li> <a href="">Apply</a></li>
+       "></a>
+       <a href="/pages/course.html">Courses</a></li>
+       <li> <a href="/pages/quiz.html">Quizes</a></li>
+       <li> <a href="/pages/colleges.html">Colleges</a></li>
        <input type="text" placeholder="Search Tutorials Here" class="search-bar" >
-       <li> <a href="">
+       <li> <a href="/pages/login.html">
         <button class="nav-btn">
             Log In
         </button>
        </a></li>
 
-       <li> <a href="">
+       <li> <a href="/pages/sign.html">
         <button class="nav-btn">
             Sign Up
         </button>
@@ -122,8 +33,7 @@
        <li><a href=""><img src="/icons/profile.png"  class="logo"></a></li>
     </ul>
     </nav>
-
-
+</div>
 
 <div class="container1">
     <img src="/images/indexpageimg.jpg" alt="" 
@@ -280,17 +190,14 @@
     SkilStack is an innovative educational platform designed to help you master programming languages through detailed and easy-to-understand documentation.
 </p>
 </div>
-<div class="clm1">
-
-</div>
 
 <div class="footer-links">
     <ul>
         <h4 class="footear-heading">Quick Links</h4>
-        <li><a href="">Courses</a></li>
-        <li><a href="">Apply</a></li>
-        <li><a href="">Explore Colleges</a></li>
-        <li><a href="">Exercises</a></li>
+        <li><a href="/pages/Course.html">Courses</a></li>
+        <li><a href="https://www.linkedin.com/jobs/">Apply</a></li>
+        <li><a href="/pages/colleges.html">Explore Colleges</a></li>
+        <li><a href="/pages/quiz.html">Quizes</a></li>
         <h3 class="Rights">Copyright© 2024 SkillStack. All Rights Reserved</h3>
     </ul>
 </div>
@@ -298,34 +205,42 @@
 
 <div class="pupular-course-link">
     <h2 class="footear-heading">Popular Languages</h2>
-<li><a href="">HTML</a></li>
-<li><a href="">CSS</a></li>
-<li><a href="">JavaScript</a></li>
-<li><a href="">Java</a></li>
-<li><a href="">Python</a></li>
+    <ul>
+    <li><a href="/pages/language_1.html">HTML</a></li>
+    <li><a href="/pages/language_1.html">CSS</a></li>
+    <li><a href="/pages/language_1.html">JavaScript</a></li>
+    <li><a href="/pages/language_1.html">Java</a></li>
+    <li><a href="/pages/language_1.html">Python</a></li>
+    </ul>
 </div>
 
 
 <div class="footer-contact">
     <a href="/pages/contact.html" style="color: white; margin-left: 60px auto;">Contact Us</a>
     <div class="footer-icons">
-       <a href="">
+       <a href="https://www.facebook.com/profile.php?id=61571504183031" target="_blank">
         <img src="/icons/instagram.png" alt="instagram" class="social-icons">
        </a> 
-       <a href="">
+
+       <a href="https://www.facebook.com/profile.php?id=61571504183031" target="_blank">
         <img src="/icons/facebook.png" alt="facebook" class="social-icons">
        </a> 
-       <a href="">
+
+       <a href="https://x.com/SkillStacK033" target="_blank">
         <img src="/icons/twitter.png" alt="twitter" class="social-icons">
        </a> 
-       <a href="">
-        <img src="/icons/youtube.png" alt="twitter" class="social-icons">
+
+       <a href="https://www.youtube.com/@SkillStack033" target="_blank">
+        <img src="/icons/youtube.png" alt="youtube" class="social-icons">
        </a> 
-       <a href="">
-        <img src="/icons/linkedin.png" alt="twitter" class="social-icons">
+
+       <a href="" target="_blank" >
+        <img src="/icons/linkedin.png" alt="" class="social-icons">
        </a> 
+
     </div>
     </div>
 </div>
+
 </body>
 </html>
